@@ -1,0 +1,13 @@
+# Never commit local environment variables or credentials.
+.env
+.env.*
+
+# Allow example configuration templates to be committed.
+!.env.example
+
+# Installed dependencies.
+node_modules/
+
+# Debug logs.
+npm-debug.log*
+dist/

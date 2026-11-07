@@ -1,0 +1,35 @@
+{
+  "name": "google-auth-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build \u0026\u0026 node --test tests/*.test.js",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch",
+    "migrate": "npm run build && node dist/config/runMigrations.js",
+    "build": "tsc \u0026\u0026 node scripts/copyMigrations.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "connect-pg-simple": "^10.0.0",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "google-auth-library": "^11.3.3",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/connect-pg-simple": "^7.0.3",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  }
+}
